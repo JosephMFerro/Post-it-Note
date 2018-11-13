@@ -1,0 +1,7 @@
+<h1> Make a post it note! </h1>
+<p><%= link_to 'New Note', new_page_path %></p>
+<% @pages.each do |page| %>
+  <h2><%= page.title %></h2>
+  <%= link_to 'Show Note', page_path(page) %>
+<% end %>
+
